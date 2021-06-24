@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap');
+
+
+.service-txt > h4{
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+.change-font{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+.change-para-font{
+    font-family: 'Inter', sans-serif;
+}
+
+.contact-form input[type=text], .contact-form input[type=email], .contact-form textarea{
+    padding: 10px 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.contact-form{
+    margin: 1rem 0;
+}
+
+.main-menu > li a{
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 1px;
+    transition: 0.3s ease all;
+}
+
+.main-menu > li a:hover{
+    letter-spacing: 1px;
+}
+
+.cols-clients{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 750px){
+    .cols-clients{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+.client-logo{
+    padding: 1.2rem;
+}
+
+.client-img{
+    width: 100%;
+    height: 100%;
+}
