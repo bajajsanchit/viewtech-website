@@ -1,58 +1,191 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap");
 
-
-.service-txt > h4{
-    font-size: 36px;
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
+.service-txt > h4 {
+	font-size: 36px;
+	font-family: "Playfair Display", serif;
+	font-weight: 600;
 }
 
-.change-font{
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
+.change-font {
+	font-family: "Playfair Display", serif;
+	font-weight: 600;
 }
 
-.change-para-font{
-    font-family: 'Inter', sans-serif;
+.change-para-font {
+	font-family: "Inter", sans-serif;
 }
 
-.contact-form input[type=text], .contact-form input[type=email], .contact-form textarea{
-    padding: 10px 0;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+	padding: 10px 0;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 }
 
-.contact-form{
-    margin: 1rem 0;
+.contact-form {
+	margin: 1rem 0;
 }
 
-.main-menu > li a{
-    text-transform: uppercase;
-    font-family: 'Inter', sans-serif;
-    letter-spacing: 1px;
-    transition: 0.3s ease all;
+.main-menu > li a {
+	text-transform: uppercase;
+	font-family: "Inter", sans-serif;
+	letter-spacing: 1px;
+	transition: 0.3s ease all;
 }
 
-.main-menu > li a:hover{
-    letter-spacing: 1px;
+.main-menu > li a:hover {
+	letter-spacing: 1px;
 }
 
-.cols-clients{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+.cols-clients {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-@media (max-width: 750px){
-    .cols-clients{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-}
-
-.client-logo{
-    padding: 1.2rem;
+@media (max-width: 750px) {
+	.cols-clients {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
-.client-img{
-    width: 100%;
-    height: 100%;
+.client-logo {
+	padding: 1.2rem;
+}
+
+.client-img {
+	width: 100%;
+	height: 100%;
+}
+
+.loader-logo {
+	transition: 0.3s ease all;
+	animation: logo-transition 1s ease-in-out 0s repeat;
+}
+
+@keyframes logo-transition {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0.75;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.section h3.entry-title {
+	font-size: 20px;
+}
+
+@property --num {
+	syntax: "<integer>";
+	initial-value: 150;
+	inherits: false;
+}
+
+.special-span-one {
+	animation: counter-one 5s 1 ease-in-out;
+	counter-reset: num var(--num);
+	font: inherit;
+}
+.special-span-one::after {
+	content: counter(num);
+}
+
+@keyframes counter-one {
+	from {
+		--num: 0;
+	}
+	to {
+		--num: 150;
+	}
+}
+
+@property --num-one {
+	syntax: "<integer>";
+	initial-value: 10;
+	inherits: false;
+}
+
+.special-span-two {
+	animation: counter-two 5s 1 ease-in-out;
+	counter-reset: num var(--num-one);
+	font: inherit;
+}
+.special-span-two::after {
+	content: counter(num);
+}
+
+@keyframes counter-two {
+	from {
+		--num-one: 0;
+	}
+	to {
+		--num-one: 10;
+	}
+}
+
+@property --num-two {
+	syntax: "<integer>";
+	initial-value: 45;
+	inherits: false;
+}
+
+.special-span-three {
+	animation: counter-three 5s 1 ease-in-out;
+	counter-reset: num var(--num-two);
+	font: inherit;
+}
+.special-span-three::after {
+	content: counter(num);
+}
+
+@keyframes counter-three {
+	from {
+		--num-two: 0;
+	}
+	to {
+		--num-two: 45;
+	}
+}
+
+@property --num-three {
+	syntax: "<integer>";
+	initial-value: 5;
+	inherits: false;
+}
+
+.special-span-four {
+	animation: counter-four 5s 1 ease-in-out;
+	counter-reset: num var(--num-three);
+	font: inherit;
+}
+.special-span-four::after {
+	content: counter(num);
+}
+
+@keyframes counter-four {
+	from {
+		--num-three: 0;
+	}
+	to {
+		--num-three: 5;
+	}
+}
+
+.youtube-content {
+	text-align: center;
+	padding: 1.5rem;
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: white;
+	margin-bottom: 0;
+}
+
+.youtube-content {
+	background-color: #ff0000;
 }
