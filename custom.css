@@ -81,7 +81,7 @@
 	font-size: 20px;
 }
 
-@property --num {
+/* @property --num {
 	syntax: "<integer>";
 	initial-value: 150;
 	inherits: false;
@@ -175,7 +175,7 @@
 	to {
 		--num-three: 5;
 	}
-}
+} */
 
 .youtube-content {
 	text-align: center;
