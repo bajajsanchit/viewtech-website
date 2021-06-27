@@ -88,7 +88,7 @@
 }
 
 .special-span-one {
-	animation: counter-one 5s infinite ease-in-out;
+	animation: counter-one 5s 1 ease-in-out;
 	counter-reset: num var(--num);
 	font: inherit;
 }
@@ -112,7 +112,7 @@
 }
 
 .special-span-two {
-	animation: counter-two 5s infinite ease-in-out;
+	animation: counter-two 5s 1 ease-in-out;
 	counter-reset: num var(--num-one);
 	font: inherit;
 }
@@ -136,7 +136,7 @@
 }
 
 .special-span-three {
-	animation: counter-three 5s infinite ease-in-out;
+	animation: counter-three 5s 1 ease-in-out;
 	counter-reset: num var(--num-two);
 	font: inherit;
 }
@@ -160,7 +160,7 @@
 }
 
 .special-span-four {
-	animation: counter-four 5s infinite ease-in-out;
+	animation: counter-four 5s 1 ease-in-out;
 	counter-reset: num var(--num-three);
 	font: inherit;
 }
