@@ -189,3 +189,26 @@
 .youtube-content {
 	background-color: #ff0000;
 }
+
+.fa-phone-alt,
+.fa-map-marker-alt {
+	margin-right: 18px;
+}
+
+.contact-details {
+	color: black;
+}
+
+.text-slider-wrapper img.text-slide-img {
+	width: 120px !important;
+	height: 120px !important;
+}
+
+.mention-image {
+	transition: 0.3s ease all;
+}
+
+.mention-image:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.3);
+}
