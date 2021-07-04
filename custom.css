@@ -212,3 +212,16 @@
 	transform: translateY(-10px);
 	box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.3);
 }
+
+.moments-content {
+	text-align: center;
+	padding: 2rem;
+	font-size: 1.8rem;
+	font-weight: 600;
+	color: white;
+	margin-bottom: 0;
+}
+
+.moments-content {
+	background-color: #7d92e5;
+}
