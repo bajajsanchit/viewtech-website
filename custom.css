@@ -225,3 +225,32 @@
 .moments-content {
 	background-color: #7d92e5;
 }
+
+.portfolio-title {
+	font-size: 1.3rem;
+	padding: 1rem;
+}
+
+.portfolio-text-holder {
+	left: 0;
+}
+
+.about-event,
+.about-venue {
+	text-align: center;
+	color: black;
+	font-size: 1.4rem;
+}
+
+.about-venue {
+	margin-bottom: 1rem;
+}
+
+.member-bar {
+	background-color: #7d92e5;
+	text-align: center;
+	padding: 2rem;
+	font-size: 1.5rem;
+	color: white;
+	margin-bottom: 0;
+}
